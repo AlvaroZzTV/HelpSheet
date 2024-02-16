@@ -93,6 +93,9 @@ su
 ping
 ifconfig / ip a
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 - Nmap [Escaneo de puertos]
 
 sudo nmap -A -T4 -sC -sV -p- <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y escanea todos los puertos
