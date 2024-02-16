@@ -75,6 +75,23 @@ mkdir
 rmdir
 cat
 nano
+sudo
+pwd
+touch
+locate
+find
+grep
+chmod
+chown
+wget
+uname
+man
+history
+echo
+alias
+su
+ping
+ifconfig / ip a
 
 - Nmap [Escaneo de puertos]
 
