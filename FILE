@@ -114,6 +114,7 @@ ifconfig / ip a --  Se mostrarán todas las direcciones IP de tu red
 sudo nmap -A -T4 -sC -sV -p- <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y escanea todos los puertos
 sudo nmap -sV -sU <RHOST> # Detecta servicios y versiones y realiza escaneo UDP
 sudo nmap -A -T4 -sC -sV --script vuln <RHOST> # Escanea Sistema Operativo y Servicios, Modo Agresivo, Escanea con una lista default de scripts pertenecienetes a nmap, Detecta servicios y versiones y lanza todos los scripts de deteccion de contenido NSE
+nmap -sn -PR --spoof-mac <mac address> <target> # El MAC spoofing puede permitirnos falsificar el origen de nuestras conexiones y puede resultar útil para evadir los sistemas IDS. Es posible falsificar su dirección MAC mientras realiza un escaneo de ping ARP.
 
 --------------------- Reverse Shell msfvenom
 
