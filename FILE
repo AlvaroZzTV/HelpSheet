@@ -180,3 +180,8 @@ dirsearch -u http://[IP or URL]/ /usr/share/dirbuster/wordlists/directory-list-2
 --------------------- RDP
 
 xfreerdp /u:[USER] /p:[PASSWORD] /v:[IP] /cert-ignore -- Para conectarse por RDP a un equipo
+
+--------------------- WPSCAN
+
+wpscan --url [URL] --enumerate ap,at,dbe,cb,u
+wpscan --url [URL] -U <NAME 1> -P /usr/share/wordlists/<wordlist>  [Ataque de diccionario]
