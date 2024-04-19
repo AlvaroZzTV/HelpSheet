@@ -120,6 +120,11 @@ sudo nmap -sN [Red a la que estas conectado/mascara] # Un barrido de red sin nec
 sudo nmap -sT [IP] # Analizar puertos TCP
 sudo nmap -sU [IP] # Analizar puertos UDP
 sudo nmap -O [IP] # Te dice el sistema operativo
+sudo nmap [IP] --script vuln -p[PUERTO] 
+
+--------------------- Netdiscover
+
+sudo netdiscover -r 192.168.1.0/24 // o IP de red // Escanea los dispositivos conectados a la red 
 
 --------------------- Reverse Shell msfvenom
 
@@ -277,3 +282,13 @@ https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell
 --------------------- Upload file bypass
 
 https://book.hacktricks.xyz/pentesting-web/file-upload
+
+--------------------- Metasploit
+
+msfconsole (Abrir el metasploit)
+msfbd -h (Enseña banderas para poder usar)
+msfdb start (Iniciar base de datos)
+msfdb init (Inicializar base de datos)
+msfdb status (Comprobar si esta todo correcto)
+db_nmap [IP] (Hace un escaneo de nmap dentro de metasploit)
+services (Despues del nmap, te resume todo en los servicios)
