@@ -47,7 +47,7 @@ H A C K I N G   I N   P R O G R E S S:
 
 W E L C O M E   T O   T H E   H A C K:
 
-Fases del hacking:
+Fases del pentesting:
 
 1-Enumeracion
 2-Escaneo
@@ -296,3 +296,7 @@ msfdb init (Inicializar base de datos)
 msfdb status (Comprobar si esta todo correcto)
 db_nmap [IP] (Hace un escaneo de nmap dentro de metasploit)
 services (Despues del nmap, te resume todo en los servicios)
+
+--------------------- Getcap
+
+getcap -r / 2>/dev/null (Puedes buscar binarios con capacidades)
