@@ -300,3 +300,7 @@ services (Despues del nmap, te resume todo en los servicios)
 --------------------- Getcap
 
 getcap -r / 2>/dev/null (Puedes buscar binarios con capacidades)
+
+--------------------- Fuzzing Web
+
+ffuf -c -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/Web-Content/common.txt -u 'http://10.0.2.6/~FUZZ' (Escribir ~FUZZ es para indicarle al comando por donde empezar con un diccionario sacado de internet)
