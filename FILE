@@ -242,7 +242,7 @@ wpscan --url [URL] -U <NAME 1> -P /usr/share/wordlists/<wordlist>  [Ataque de di
 
 Linux:
 
-   script /dev/null -c bash // python -c 'import pty;pty.spawn("/bin/bash")'
+   script /dev/null -c bash // python -c 'import pty; pty.spawn("/bin/bash")'
    ctrl+z
    stty raw-echo
    fg
