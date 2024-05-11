@@ -307,4 +307,15 @@ ffuf -c -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/We
 ffuf -c -ic -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/Web-Content/directory-list-2.3-medium.txt -u 'http://10.0.2.6/~secret/.FUZZ' -fc 403 -e .txt, .html (Este diccionario es para poder buscar archivos en directorios) 
 
 
----------------------
+--------------------- Telnet
+
+telnet [IP] [puerto]
+
+(DENTRO DE TELNET)
+
+user (Usuario)
+pass (Contraseña)
+
+- Una vez iniciado sesión:
+list (Para listar los emails)
+retr 1 (Verl el email numero 1)
