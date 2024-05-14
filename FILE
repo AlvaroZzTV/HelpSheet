@@ -319,3 +319,9 @@ pass (Contraseña)
 - Una vez iniciado sesión:
 list (Para listar los emails)
 retr 1 (Verl el email numero 1)
+
+
+--------------------- Hashcat
+
+hashcat -a 0 -m 0 hash2 /usr/share/wordlists/rockyou.txt
+
