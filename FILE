@@ -182,6 +182,7 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://10.10.36.145
 --------------------- Gobuster
 
 gobuster dir --url http://[IP or URL] --wordlist /usr/share/wordlists/dirb/big.txt
+gobuster dir --url 10.10.128.10 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100
 
 --------------------- Dirsearch
 
