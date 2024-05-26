@@ -324,5 +324,13 @@ retr 1 (Verl el email numero 1)
 
 --------------------- Hashcat
 
-hashcat -a 0 -m 0 hash2 /usr/share/wordlists/rockyou.txt
+hashcat -a 0 -m 0 [FILE] /usr/share/wordlists/rockyou.txt
+https://hashcat.net/wiki/doku.php?id=example_hashes
 
+--------------------- Kerbrute (Github tool)
+
+kerbrute userenum -d DOMAIN_NAME --dc DOMAIN_CONTROLLER_IP user_wordlists.txt (Enumeración de usuarios)
+
+--------------------- GetNPUsers 
+
+impacket-GetNPUsers -dc-ip [IP] -usersfile [FILE] [DOMAIN/]
