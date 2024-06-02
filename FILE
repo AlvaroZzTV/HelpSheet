@@ -334,3 +334,10 @@ kerbrute userenum -d DOMAIN_NAME --dc DOMAIN_CONTROLLER_IP user_wordlists.txt (E
 --------------------- GetNPUsers 
 
 impacket-GetNPUsers -dc-ip [IP] -usersfile [FILE] [DOMAIN/]
+
+--------------------- WhatWeb
+
+whatweb http://[IP]:[PORT]  (Responde a la pregunta "Que web es esta?")
+
+
+
