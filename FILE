@@ -339,5 +339,13 @@ impacket-GetNPUsers -dc-ip [IP] -usersfile [FILE] [DOMAIN/]
 
 whatweb http://[IP]:[PORT]  (Responde a la pregunta "Que web es esta?")
 
+--------------------- John
 
+/usr/share/john/ssh2john.py [ssh key file]
+/usr/share/john/ssh2john.py [ssh key file] > [ssh hash file] 
+john [hash file] --wordlist=/usr/share/wordlists/rockyou.txt
 
+USO DEL SSH KEY
+
+ssh -i [ssh key file] james@10.10.230.0
+[Password]
