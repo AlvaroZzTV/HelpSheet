@@ -81,6 +81,7 @@ Fases del pentesting:
 
 Basic Commands:
 
+host -- Te permitirá ver la dirección IP asociada a un dominio, o a la inversa
 cd -- Desplazarse entre directorios
 mv -- Mover ficheros o directorios 
 cp -- Copiar ficheros
