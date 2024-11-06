@@ -127,6 +127,10 @@ sudo nmap [IP] --script vuln -p[PUERTO]
 
 sudo netdiscover -r 192.168.1.0/24 // o IP de red // Escanea los dispositivos conectados a la red 
 
+--------------------- Whois
+
+ whois [URL OR IP] (Obtener información sobre el propietario de un nombre de dominio o una dirección IP en Internet)
+
 --------------------- Reverse Shell msfvenom
 
 # Para Windows
