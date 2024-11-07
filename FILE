@@ -372,6 +372,6 @@ ssh -i [ssh key file] james@10.10.230.0
 
 --------------------- wafw00f
 
-wafw00f [URL]  (Detecta que tipo de firewall tiene una WEB)
+wafw00f [URL] -a  (Detecta que tipo de firewall tiene una WEB)
 
 wafw00f -l (Lista de firewalls que detecta)  
