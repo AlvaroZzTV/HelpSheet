@@ -325,7 +325,7 @@ getcap -r / 2>/dev/null (Puedes buscar binarios con capacidades)
 
 ffuf -c -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/Web-Content/common.txt -u 'http://10.0.2.6/~FUZZ' (Escribir ~FUZZ es para indicarle al comando por donde empezar con un diccionario sacado de internet llamado seclists master el cual hay que descargarse antes, en mi caso lo tengo en documentos, por eso tengo esa ruta // -w para indicar la ruta)
 ffuf -c -ic -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/Web-Content/directory-list-2.3-medium.txt -u 'http://10.0.2.6/~secret/.FUZZ' -fc 403 -e .txt, .html (Este diccionario es para poder buscar archivos en directorios) 
-ffuf -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/DNS/subdomains-top1million-110000.txt -u [URL] -H "Host:FUZZ.[URL]" -fw 1
+ffuf -w /home/alvarozz/Documents/Diccionario-web/SecLists-master/Discovery/DNS/subdomains-top1million-110000.txt -u [URL] -H "Host:FUZZ.[URL]" -fw 1 (Buscar dominios ocultos de un host, comando usado por primera vez en la maquina de WitheRose de THM)
 
 --------------------- Telnet
 
