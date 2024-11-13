@@ -145,6 +145,12 @@ Los tipos de enumeración que realiza dnsrecon son los siguientes:
 • Zona de Walking
 • Búsqueda de google
 
+--------------------- theHarvester
+
+theHarvester -d [URL] -b [SOURCE]
+
+Sources: https://github.com/laramies/theHarvester
+
 --------------------- Reverse Shell msfvenom
 
 # Para Windows
