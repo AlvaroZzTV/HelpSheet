@@ -131,7 +131,7 @@ sudo netdiscover -r 192.168.1.0/24 // o IP de red // Escanea los dispositivos co
 
  whois [URL OR IP] (Obtener información sobre el propietario de un nombre de dominio o una dirección IP en Internet)
 
---------------------- Whois
+--------------------- Dnsrecon
 
 dnsrecon -d [URL]  
 
