@@ -1,5 +1,3 @@
-¡DISCLAIMER! Esta helpsheet es bajo mi conocimiento, claramente hay otros metodos u otras formas de hacer los comandos en la terminal // Las rutas de los comandos son en MI terminal, es posible que haya algun cambio o que yo emplee una herramienta descargada online.
-
 H A C K I N G   I N   P R O G R E S S:
 ██ 20% ... 
 ███ 40% .... 
@@ -55,6 +53,8 @@ Fases del pentesting:
 4-Post-explotación
 5-Informe
 
+Puertos mas comunes:
+
 25 - SMTP
 22 - SSH
 110 - POP3
@@ -79,7 +79,7 @@ Fases del pentesting:
 5985 - winRM HTTP
 5986 - winRM HTTPS
 
-Basic Commands:
+Comandos basicos:
 
 host -- Te permitirá ver la dirección IP asociada a un dominio, o a la inversa
 cd -- Desplazarse entre directorios
