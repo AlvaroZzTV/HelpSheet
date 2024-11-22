@@ -125,6 +125,7 @@ sudo nmap [IP] --script vuln -p[PUERTO]
 sudo nmap -sn -PS1-1000 [IP] # Manda un TCP SYN ping a los puertos entre el 1 y el 1000 sin escanearlos
 sudo nmap -sn -PA1-1000 [IP] # Manda un TCP ACK ping a los puertos entre el 1 y el 1000 sin escanearlos
 sudo nmap -sS -p- -sV -O --osscan-guess -T4 [IP] # Hace un escaneo de todos los puertos junto a sus versiones de servicio y nos dice el sistema operativo de forma mas agresiva.
+sudo nmap -sS -p- -sV --version-intensity 8 -O -T4 # Hace un escaneo a todos los puertos y nos dice exactamente la versión del servicio.
 
 --------------------- Netdiscover
 
