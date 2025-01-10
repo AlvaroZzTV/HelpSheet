@@ -198,6 +198,9 @@ set -- seleccion, elige, se trabaja... (version antigua)
 use -- "" (version nueva)
 run -- lanza exploit, auxiliary...
 
+Ruta de lista de usuarios mas comunes para ataques de fuerza bruta: /usr/share/metasploit-framework/data/wordlists/common_users.txt
+Ruta de lista de contraseñas mas comunes para ataques de fuerza bruta: /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+
 --------------------- Hydra
 
 -L archivo de usuarios
