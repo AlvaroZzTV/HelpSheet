@@ -127,7 +127,7 @@ sudo nmap -sn -PA1-1000 [IP] # Manda un TCP ACK ping a los puertos entre el 1 y 
 sudo nmap -sS -p- -sV -O --osscan-guess -T4 [IP] # Hace un escaneo de todos los puertos junto a sus versiones de servicio y nos dice el sistema operativo de forma mas agresiva.
 sudo nmap -sS -p- -sV --version-intensity 8 -O -T4 [IP] # Hace un escaneo a todos los puertos y nos dice exactamente la versión del servicio.
 sudo nmap -f # Evasion de firewall mandando paquetes largos en muchos fragmentos pequeños.
-sudo nmap -p [Port] --script=smb-enum-shares.nse,smb-enum-users.nse [IP]
+sudo nmap -p [Port] --script=smb-enum-shares.nse,smb-enum-users.nse [IP] # Script para enumerar shares.
 
 --------------------- Netdiscover
 
@@ -304,7 +304,7 @@ smbclient -L IP -N
         mget *
         smbget -R smb://IP/recurso
 
-nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP]
+nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP] # Script para enumerar shares.
 smbmap -H [IP]
 smbmap -H [IP] -u [user] -p [password] -- probar usuario y una única contraseña para ver recursos compartidos
 crackmapexec smb [IP] -u '' -p '' --user --> enumerar usuarios 
