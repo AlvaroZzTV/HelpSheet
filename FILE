@@ -214,6 +214,11 @@ hydra -L user.txt -P /usr/share/wordlists/rockyou.txt [IP] http-post-form "[URL]
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://10.10.36.145/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=17mm5k1jmmkcnes87ttmi63603; security=low; security=low:F=Username and/or password incorrect'
 hydra -l [user] -P /usr/share/wordlists/rockyou.txt ssh://[IP]
 
+--------------------- Feroxbuster
+
+feroxbuster -u http://ua.thm/assets -w Desktop/Diccionario-web/SecLists-master/Discovery/Web-Content/common.txt --extensions html,php,txt,pub,xml,jpg,jpeg,png,zip -d 1
+
+
 --------------------- Gobuster
 
 gobuster dir --url http://[IP or URL] --wordlist /usr/share/wordlists/dirb/big.txt
